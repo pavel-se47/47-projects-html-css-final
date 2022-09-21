@@ -1,8 +1,7 @@
 .clients-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   @extend %list;
 
   &__icon {

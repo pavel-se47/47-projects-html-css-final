@@ -1,5 +1,15 @@
 .page-header__site-nav {
-  @extend %flex-center;
-  justify-content: space-between;
   @extend %container;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
