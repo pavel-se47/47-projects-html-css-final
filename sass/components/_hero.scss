@@ -5,7 +5,7 @@
   align-self: center;
   text-align: center;
   max-width: 1980px;
-  height: 300px;
+  height: 360px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to left, rgba(117, 117, 117, 1), rgba(117, 117, 117, 0.3)),
@@ -16,28 +16,36 @@
 
   background-color: $sec-color-bg;
   color: $sec-color-text;
-  font-size: 20px;
-
-  &__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
-    font-size: 30px;
-    height: 300px;
   }
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    font-size: 40px;
-    height: 400px;
+    height: 420px;
   }
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    font-size: 50px;
-    height: 460px;
+    height: 480px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 36px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 42px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 48px;
+    }
   }
 }

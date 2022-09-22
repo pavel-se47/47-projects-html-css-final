@@ -1,2 +1,57 @@
 .page-header__main-nav {
 }
+.button-menu__image {
+  width: 40px;
+  height: 40px;
+  fill: $sec-color-bg;
+
+  transition: fill 250ms $timing;
+}
+
+.button-menu {
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+
+  &:focus .button-menu__image,
+  &:hover .button-menu__image {
+    fill: $accent-color;
+  }
+}
+
+.button-menu__image-cross {
+  display: none;
+}
+
+.button-menu__image-cross {
+  display: none;
+}
+
+.button-menu__is-open .button-menu__image-cross {
+  display: block;
+}
+
+.button-menu__is-open .button-menu__image-line {
+  display: none;
+}
+
+.button-menu__content {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: $prim-color-bg;
+  border-top: 2px solid $sec-color-bg;
+  border-bottom: 2px solid $sec-color-bg;
+}
+
+.button-menu__content-is-open {
+  display: block;
+}

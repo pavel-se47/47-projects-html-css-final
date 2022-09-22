@@ -21,21 +21,46 @@
   &__label {
     display: block;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 28px;
+    }
   }
   &__input {
     display: block;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     padding: 14px;
 
     background-color: $sec-color-bg;
-    font-size: 22px;
+    font-size: 20px;
     border: 2px solid $prim-color-bg;
     border-radius: 6px;
 
     transition: border-color 250ms $timing;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 28px;
+    }
 
     &:hover,
     &:focus {
@@ -46,6 +71,18 @@
       text-align: center;
       font-style: italic;
       font-size: 16px;
+
+      @media screen and (min-width: $mobile) {
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        font-size: 20px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        font-size: 22px;
+      }
     }
   }
 }

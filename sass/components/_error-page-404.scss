@@ -1,10 +1,18 @@
 .error {
-  font-size: 28px;
   text-align: center;
 
   &__desc {
     margin-top: 15px;
     margin-bottom: 15px;
+    font-size: 20px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 28px;
+    }
   }
   &__image {
     margin-left: auto;
