@@ -4,6 +4,11 @@
   border-top: 2px solid $sec-color-bg;
   border-bottom: 2px solid $sec-color-bg;
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   &__link:hover,
   &__link:focus {
     color: $prim-color-text;

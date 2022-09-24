@@ -4,7 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid $sec-color-bg;
+
+  &__border {
+    border-top: 2px solid $sec-color-bg;
+    border-bottom: 2px solid $sec-color-bg;
+
+    @media screen and (min-width: $tablet) {
+      border-top: none;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
 
   &__item {
     @extend %flex-center;
@@ -18,20 +28,20 @@
   &__link {
     @extend %flex-center;
     justify-content: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: $accent-color;
     text-decoration: none;
     transition: color 250ms $timing;
 
     @media screen and (min-width: $tablet) {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
 
     @media screen and (min-width: $desktop) {
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     &-icon {
