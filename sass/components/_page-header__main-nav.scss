@@ -27,10 +27,6 @@
   display: none;
 }
 
-.button-menu__image-cross {
-  display: none;
-}
-
 .button-menu__is-open .button-menu__image-cross {
   display: block;
 }
@@ -40,18 +36,25 @@
 }
 
 .button-menu__content {
-  display: none;
+  // display: none;
 
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  padding: 10px;
   background-color: $prim-color-bg;
-  border-top: 2px solid $sec-color-bg;
-  border-bottom: 2px solid $sec-color-bg;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+
+  transition: transform 250ms $timing;
 }
 
 .button-menu__content-is-open {
-  display: block;
+  // display: block;
+
+  opacity: 1;
+  pointer-events: initial;
+  transform: translateX(0%);
 }
