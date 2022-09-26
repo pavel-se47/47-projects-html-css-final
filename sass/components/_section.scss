@@ -21,7 +21,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    min-width: $desktop;
   }
 }
 .section--display {
@@ -33,7 +33,7 @@
   margin-top: 0;
   margin-bottom: 30px;
 
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
 
   &--vh {
@@ -66,7 +66,6 @@
     flex-wrap: wrap;
   }
 }
-
 .section__item {
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 2);
@@ -76,19 +75,16 @@
     width: calc((100% - 90px) / 4);
   }
 }
-
 .section__item:not(:nth-child(2n)) {
   @media screen and (min-width: $tablet) {
     margin-right: 30px;
   }
 }
-
 .section__item:not(:nth-child(4n)) {
   @media screen and (min-width: $desktop) {
     margin-right: 30px;
   }
 }
-
 .section__icon {
   width: 70px;
   height: 70px;
@@ -108,7 +104,15 @@
   text-align: center;
 
   color: $th-color-text;
-  font-size: 28px;
+  font-size: 22px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+  }
 
   &-desc {
     margin-top: 0;
@@ -190,6 +194,10 @@
   width: 335px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
 
   &-name {
     margin-top: 20px;

@@ -352,12 +352,12 @@ body.body--modal-open {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 .logo:hover, .logo:focus {
@@ -389,12 +389,13 @@ body.body--modal-open {
 }
 @media screen and (min-width: 768px) {
   .logo__footer {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo__footer {
-    font-size: 24px;
+    font-size: 28px;
+    margin-right: 80px;
   }
 }
 .logo__footer:hover, .logo__footer:focus {
@@ -425,6 +426,22 @@ body.body--modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header__main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
 .button-menu__image {
   width: 40px;
   height: 40px;
@@ -443,6 +460,11 @@ body.body--modal-open {
   margin: 0;
   padding: 0;
   background-color: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .button-menu {
+    display: none;
+  }
 }
 .button-menu:focus .button-menu__image, .button-menu:hover .button-menu__image {
   fill: #2196f3;
@@ -506,6 +528,25 @@ body.body--modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .button-menu__content {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    pointer-events: initial;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: auto;
+  }
+}
+
 .button-menu__content--is-open {
   pointer-events: initial;
   -webkit-transform: translateX(0%);
@@ -531,8 +572,17 @@ body.body--modal-open {
             justify-content: space-evenly;
   }
 }
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    border-top: none;
+    border-bottom: none;
+  }
+}
 .nav-list__link:hover, .nav-list__link:focus {
   color: #757575;
+}
+.nav-list__item:not(:first-child) {
+  margin-left: 40px;
 }
 .nav-list__link {
   display: inline-block;
@@ -595,7 +645,6 @@ body.body--modal-open {
           align-items: center;
 }
 .contact-list__border {
-  border-top: 2px solid #757575;
   border-bottom: 2px solid #757575;
 }
 @media screen and (min-width: 768px) {
@@ -610,6 +659,17 @@ body.body--modal-open {
             justify-content: space-evenly;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-list__border {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 80px;
+  }
+}
 .contact-list__item {
   cursor: pointer;
 }
@@ -617,8 +677,8 @@ body.body--modal-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #2196f3;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -632,8 +692,8 @@ body.body--modal-open {
 }
 @media screen and (min-width: 1200px) {
   .contact-list__link {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 .contact-list__link-icon {
@@ -780,14 +840,14 @@ body.body--modal-open {
   .button__secondary {
     padding: 12px 26px;
     min-width: 160px;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .button__secondary {
     padding: 14px 30px;
     min-width: 180px;
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .button__secondary:hover, .button__secondary:focus {
@@ -814,7 +874,7 @@ body.body--modal-open {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -827,7 +887,7 @@ body.body--modal-open {
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
 }
 @media screen and (min-width: 480px) {
@@ -910,7 +970,17 @@ body.body--modal-open {
   margin-bottom: 20px;
   text-align: center;
   color: #000000;
-  font-size: 28px;
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .section__subtitle {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__subtitle {
+    font-size: 26px;
+  }
 }
 .section__subtitle-desc {
   margin-top: 0;
@@ -999,6 +1069,11 @@ body.body--modal-open {
   width: 335px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .section__person {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .section__person-name {
   margin-top: 20px;
@@ -1108,6 +1183,21 @@ body.body--modal-open {
 .contact-form {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 .contact-form__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1167,6 +1257,9 @@ body.body--modal-open {
 @media screen and (min-width: 1200px) {
   .contact-form__input {
     font-size: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
   }
 }
 .contact-form__input:hover, .contact-form__input:focus {
@@ -1805,6 +1898,11 @@ body.body--modal-open {
     margin-right: 5px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section__button-item:nth-child(-n+3) {
+    margin-right: 20px;
+  }
+}
 
 .section__button-item:hover .button__secondary,
 .section__button-item:focus .button__secondary {
@@ -1824,8 +1922,14 @@ body.body--modal-open {
             justify-content: center;
   }
 }
-.works-list__examples:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+  .works-list__examples {
+    width: calc((100% - 60px) / 3);
+    height: 400px;
+  }
+}
+.works-list__examples:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 .works-list__link {
   padding: 0;

@@ -9,14 +9,19 @@
     justify-content: space-evenly;
   }
 
+  @media screen and (min-width: $desktop) {
+    border-top: none;
+    border-bottom: none;
+  }
+
   &__link:hover,
   &__link:focus {
     color: $prim-color-text;
   }
 
-  // &__item:not(:first-child) {
-  //   margin-left: 40px;
-  // }
+  &__item:not(:first-child) {
+    margin-left: 40px;
+  }
 
   &__link {
     display: inline-block;

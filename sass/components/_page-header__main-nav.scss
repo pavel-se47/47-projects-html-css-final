@@ -1,5 +1,9 @@
 .page-header__main-nav {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
   }
 }
 
@@ -20,7 +24,8 @@
   padding: 0;
   background-color: transparent;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 
   &:focus .button-menu__image,
@@ -65,7 +70,14 @@
 
   transition: transform 250ms $timing;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: initial;
+    transform: translateX(0);
+    width: auto;
   }
 }
 
