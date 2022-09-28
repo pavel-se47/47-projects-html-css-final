@@ -16,10 +16,6 @@
   &--is-hidden {
     opacity: 0;
     pointer-events: none;
-
-    // & .modal {
-    //   transform: translate(-50%, -50%) scale(0.9);
-    // }
   }
 }
 .modal {
@@ -136,7 +132,7 @@
       &:not(:placeholder-shown) + .modal__form-label,
       &:focus + .modal__form-label,
       &:not(:placeholder-shown) + .modal__form-label {
-        transform: translateY(-30px);
+        transform: translateY(-34px);
       }
 
       &:hover,
@@ -219,7 +215,7 @@
       transition: transform 250ms $timing;
 
       &:hover {
-        transform: translateY(-30px);
+        transform: translateY(-34px);
       }
     }
 

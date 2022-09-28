@@ -395,7 +395,6 @@ body.body--modal-open {
 @media screen and (min-width: 1200px) {
   .logo__footer {
     font-size: 28px;
-    margin-right: 80px;
   }
 }
 .logo__footer:hover, .logo__footer:focus {
@@ -439,6 +438,7 @@ body.body--modal-open {
             align-items: center;
     -ms-flex-item-align: center;
         align-self: center;
+    man-width: 1920px;
   }
 }
 
@@ -747,7 +747,8 @@ body.body--modal-open {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    width: auto;
+    max-width: 1920px;
     height: 480px;
   }
 }
@@ -874,7 +875,8 @@ body.body--modal-open {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: auto;
+    max-width: 1920px;
   }
 }
 
@@ -993,23 +995,11 @@ body.body--modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
-@media screen and (min-width: 1200px) {
-  .section__do-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
 .section__do-item {
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1352,7 +1342,6 @@ body.body--modal-open {
 }
 .page-footer__nav {
   text-align: center;
-  padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .page-footer__nav {
@@ -1571,14 +1560,14 @@ body.body--modal-open {
   }
 }
 .modal__form-input:not(:-moz-placeholder-shown) + .modal__form-label, .modal__form-input:not(:-moz-placeholder-shown) + .modal__form-label {
-  transform: translateY(-30px);
+  transform: translateY(-34px);
 }
 .modal__form-input:not(:-ms-input-placeholder) + .modal__form-label, .modal__form-input:not(:-ms-input-placeholder) + .modal__form-label {
-  transform: translateY(-30px);
+  transform: translateY(-34px);
 }
 .modal__form-input:hover + .modal__form-label, .modal__form-input:not(:placeholder-shown) + .modal__form-label, .modal__form-input:focus + .modal__form-label, .modal__form-input:not(:placeholder-shown) + .modal__form-label {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(-34px);
+          transform: translateY(-34px);
 }
 .modal__form-input:hover, .modal__form-input:focus {
   border-color: #2196f3;
@@ -1722,8 +1711,8 @@ body.body--modal-open {
   }
 }
 .modal__form-label:hover {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(-34px);
+          transform: translateY(-34px);
 }
 .modal__form-icon {
   position: absolute;
@@ -1885,25 +1874,19 @@ body.body--modal-open {
   margin-bottom: 30px;
 }
 
+.section__button-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .section__button-item:nth-child(odd) {
   margin-right: 5px;
 }
 
-.section__button-item:nth-child(-n+2) {
-  margin-bottom: 5px;
-}
-
 @media screen and (min-width: 768px) {
-  .section__button-item:nth-child(-n+3) {
+  .section__button-item:nth-child(-n+2) {
     margin-right: 5px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .section__button-item:nth-child(-n+3) {
-    margin-right: 20px;
-  }
-}
-
 .section__button-item:hover .button__secondary,
 .section__button-item:focus .button__secondary {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1922,18 +1905,19 @@ body.body--modal-open {
             justify-content: center;
   }
 }
+.works-list__examples:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 @media screen and (min-width: 1200px) {
   .works-list__examples {
     width: calc((100% - 60px) / 3);
     height: 400px;
   }
 }
-.works-list__examples:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
 .works-list__link {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   color: #757575;
   text-decoration: none;
 }

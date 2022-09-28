@@ -21,7 +21,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    min-width: $desktop;
+    width: auto;
+    max-width: $desktop-wide;
   }
 }
 .section--display {
@@ -125,17 +126,14 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    justify-content: space-around;
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: space-around;
   }
 }
 .section__do-item {
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
