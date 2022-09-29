@@ -32,12 +32,25 @@
     justify-content: center;
   }
 
+  @media screen and (min-width: $desktop) {
+    max-width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   &__examples {
+    margin-bottom: 30px;
     &:not(:nth-child(3n)) {
       margin-right: 30px;
     }
     @media screen and (min-width: $desktop) {
       width: calc((100% - 60px) / 3);
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: calc((100% - 90px) / 4);
+      width: 366px;
       height: 400px;
     }
   }
@@ -99,7 +112,6 @@
     top: 0;
     pointer-events: none;
 
-    width: 400px;
     height: 224.8px;
     padding: 20px;
 

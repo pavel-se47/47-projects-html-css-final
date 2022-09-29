@@ -7,13 +7,18 @@
   margin-bottom: 0;
   font-size: 22px;
 }
+.content {
+  // @media screen and (min-width: $desktop) {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+}
 .contact-form {
   text-align: center;
 
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
-    align-self: center;
     justify-content: space-evenly;
   }
 
@@ -40,6 +45,7 @@
 
     @media screen and (min-width: $desktop) {
       font-size: 28px;
+      margin-bottom: 0;
     }
   }
   &__input {
@@ -69,8 +75,8 @@
 
     @media screen and (min-width: $desktop) {
       font-size: 28px;
-      margin-right: auto;
-      margin-left: auto;
+      margin-right: 0;
+      margin-left: 0;
       margin-bottom: 0;
     }
 

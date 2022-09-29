@@ -11,6 +11,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    width: auto;
+    max-width: $desktop-wide;
   }
 }
