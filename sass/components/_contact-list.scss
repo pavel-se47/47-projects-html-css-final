@@ -4,23 +4,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: $desktop) {
-  }
+  margin-left: 40px;
 
   &__border {
     border-bottom: 2px solid $sec-color-bg;
 
     @media screen and (min-width: $tablet) {
-      border-top: none;
       flex-direction: row;
       justify-content: space-evenly;
+      border-top: none;
     }
     @media screen and (min-width: $desktop) {
       flex-direction: column;
-      border-top: none;
       border-bottom: none;
-      margin-left: 80px;
     }
   }
 
