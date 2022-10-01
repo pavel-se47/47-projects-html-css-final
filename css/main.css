@@ -717,13 +717,25 @@ body.body--modal-open {
   height: 360px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgb(117, 117, 117)), to(rgba(117, 117, 117, 0.3))), url(../images/hero1.png);
-  background-image: linear-gradient(to left, rgb(117, 117, 117), rgba(117, 117, 117, 0.3)), url(../images/hero1.png);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(117, 117, 117, 0.8)), to(rgba(117, 117, 117, 0.4))), url(../images/hero-1920.jpg);
+  background-image: linear-gradient(to left, rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.4)), url(../images/hero-1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #757575;
   color: #ffffff;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(117, 117, 117, 0.8)), to(rgba(117, 117, 117, 0.4))), url(../images/hero.jpg);
+    background-image: linear-gradient(to left, rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.4)), url(../images/hero.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(117, 117, 117, 0.8)), to(rgba(117, 117, 117, 0.4))), url(../images/hero.jpg);
+    background-image: linear-gradient(to left, rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.4)), url(../images/hero.jpg);
+  }
 }
 @media screen and (min-width: 480px) {
   .hero {

@@ -8,14 +8,28 @@
   height: 360px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to left, rgba(117, 117, 117, 1), rgba(117, 117, 117, 0.3)),
-    url(../images/hero1.png);
+  background-image: linear-gradient(to left, rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.4)),
+    url(../images/hero-1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   background-color: $sec-color-bg;
   color: $sec-color-text;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to left, rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.4)),
+      url(../images/hero.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: linear-gradient(to left, rgba(117, 117, 117, 0.8), rgba(117, 117, 117, 0.4)),
+      url(../images/hero.jpg);
+  }
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -31,11 +45,6 @@
     max-width: $desktop-wide;
     height: 480px;
   }
-
-  // @media screen and (min-width: 1440px) {
-  //   max-width: 1920px;
-  //   height: 480px;
-  // }
 
   &__title {
     margin-top: 0;
